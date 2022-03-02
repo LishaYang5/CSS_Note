@@ -58,3 +58,51 @@ import是CSS 2.1特有的
 
 优先级： id > class > 标签
 
+4. 层次选择器
+* 后代选择器
+在某个元素的后面
+祖爷爷，爷爷，爸爸，你
+
+```
+        /*后代选择器*/
+        body p{
+            background: red;
+        }
+
+        /*子选择器*/
+        body>p{
+            background: green;
+        }
+        /*相邻兄弟选择器,对下不对上，只有一个*/
+        .active+p{
+            background: pink;
+        }
+        /*通用兄弟选择器，当前选中元素的向下的所有兄弟元素*/
+        .active~p{
+            background: plum;
+        }
+```
+
+5. 结构伪类选择器
+伪类：条件
+有特效
+有冒号的就是伪类
+```
+        /*ul的第一个元素*/
+        ul li:first-child{
+            background:palevioletred;
+        }
+        /*ul的最后元素*/
+        ul li:last-child{
+            background: greenyellow;
+        }
+        /*选中p1: 定位到父元素，选择当前的第一个元素
+        选择当前p元素的父级元素，选中父级元素的第一个，并且是当前元素才生效！*/
+        p:nth-child(1){
+            background: blueviolet;
+        }
+
+        p:nth-of-type(1){
+            background: yellow;
+        }
+```
