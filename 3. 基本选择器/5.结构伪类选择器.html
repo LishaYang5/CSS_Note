@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 
-    <style>
-        /*ul的第一个元素*/
-        ul li:first-child{
-            background:palevioletred;
-        }
-        /*ul的最后元素*/
-        ul li:last-child{
-            background: greenyellow;
-        }
-        /*选中p1: 定位到父元素，选择当前的第一个元素
+        <style>
+            /*ul的第一个元素*/
+            ul li:first-child {
+                background: palevioletred;
+            }
+            /*ul的最后元素*/
+            ul li:last-child {
+                background: greenyellow;
+            }
+            /*选中p1: 定位到父元素，选择当前的第一个元素
         选择当前p元素的父级元素，选中父级元素的第一个，并且是当前元素才生效！*/
-        p:nth-child(1){
-            background: blueviolet;
-        }
+            p:nth-child(2) {
+                background: blueviolet;
+            }
 
-        p:nth-of-type(2){
-            background: yellow;
-        }
+            p:nth-of-type(2) {
+                background: yellow;
+            }
 
-        a:hover{
-            background: pink;
-        }
-    
-    
-
-    </style>
-
-
-</head>
-<body>
-    <a href="">hahahahahahahaha</a>
-    <h1>h1</h1>
-    <p >p1</p>
-    <p>p2</p>
-    <p>p3</p>
-    <p>p4</p>
-    <ul>
-        <li>
-            <p>li1</p>
-        </li>
-        <li>
-            <p>li2</p>
-        </li>
-        <li>
-            <p>li3</p>
-        </li>
-    </ul>
-</body>
+            a:hover {
+                background: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="">hahahahahahahaha</a>
+        <h1>h1</h1>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <ul>
+            <li>
+                <p>li1</p>
+            </li>
+            <li>
+                <p>li2</p>
+            </li>
+            <li>
+                <p>li3</p>
+            </li>
+        </ul>
+    </body>
 </html>
